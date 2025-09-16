@@ -1,0 +1,94 @@
+body{
+    background-color: rgba(0, 128, 0, 0.486);
+    margin: 0px;
+}
+
+#inicio{
+   background-color: #4E913C;
+    padding: 10px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+   background-image: linear-gradient(#4DBB2E #4E913C);
+}  
+
+nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+#conteudo{
+    background-color: white;
+    padding: 5px;   
+    margin: 135px;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+footer{
+    background-color: rgb(1, 48, 1);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+
+#final > h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: rgba(0, 128, 0, 0.877);
+    margin: 0px;
+    padding: 3px;
+}
+
+#final{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(144, 238, 144, 0.432);
+    padding: 5px
+}
+
+@font-face {
+    font-family: 'minha fonte';
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+
+.fonte{
+    font-family: 'minha fonte';
+    color: rgb(0, 82, 0);
+}
+
+#video{
+    background-color: rgba(0, 59, 0, 0.658);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    color: rgba(26, 105, 26, 0.877);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+
