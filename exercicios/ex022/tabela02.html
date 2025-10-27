@@ -12,6 +12,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: lightgrey;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
 
         td, th {
@@ -20,20 +28,31 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(75, 75, 75);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(75, 75, 75);
         }
 
         .num {
             text-align: right;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
     </style>
 </head>
 <body>
     <table>
+         <caption>População das Unidades Federativas<caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th>População</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
            <tr>
@@ -142,7 +161,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>
+                <th scope="row">
                     Total de Habitantes
                 </th>
                 <td><strong>209.617.919</strong></td>
