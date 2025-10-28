@@ -7,36 +7,82 @@
     <style>
          table {
             border-collapse: collapse;
-            width: 300px;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        td, th {
+        th {
             border: 1px solid black;
             text-align: center;
+            padding: 5px;
+        }
+
+        td {
+             border: 1px solid black;
+            padding: 5px;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
             padding: 5px;
         }
     </style>
 </head>
 <body>
     <table>
-        <thead>
-            <th>Grupo</th>
-            <th>Mulheres</th>
-            <th>Homens</th>
-            <th>Nomes</th>
-            <th>Filmes</th>
+        <caption>Filmes Favoritos</caption>
+         <thead>
+           <th scope="col">Grupo</th>
+           <th scope="col" colspan="1">Nomes</th>
+           <th colspan="3" scope="colgroup">Filmes</th>
         </thead>
+
         <tbody>
             <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
-                <td>Beatriz Souza</td>
-                <td>Cla
-                </td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <td>Claúdia Melo</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
             </tr>
+            <tr>
+                <tr>
+                     <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tr>
+
         </tbody>
     </table>
 </body>
