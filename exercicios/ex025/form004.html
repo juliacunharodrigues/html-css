@@ -7,14 +7,23 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="post"> 
+    <form action="cadastro.php" method="get"> 
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexo"> Masculino
+            <input type="radio" name="sexo" id="ifem" checked value="F"> Feminino
+        </fieldset>
         <fieldset>
             <legend>Esportes</legend>
-            <input type="checkbox" name="fut" id="ifut">Futebol
-            <input type="checkbox" name="nat" id="inat">Natação
-            <input type="checkbox" name="bas" id="ibas">Basquete
-            <input type="checkbox" name="vol" id="ivol">Volêi
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label> <br>
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volêi</label> <br>
         </fieldset>    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>        
     </form>
 </body>
 </html>
